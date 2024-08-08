@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462CAA782C38AC2B00F91CBC /* ElectionWinners2024.csv in Resources */ = {isa = PBXBuildFile; fileRef = 462CAA772C38AC2B00F91CBC /* ElectionWinners2024.csv */; };
+		466D52C32C375A5800EAD071 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D52C22C375A5800EAD071 /* Summary.swift */; };
+		4678893A2C36A52C0069CF94 /* CandidateChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467889392C36A52C0069CF94 /* CandidateChooser.swift */; };
+		4678893D2C36E8830069CF94 /* WinningCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678893C2C36E8830069CF94 /* WinningCandidate.swift */; };
+		468A4D172C4AE04300F38504 /* Seats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468A4D162C4AE04300F38504 /* Seats.swift */; };
+		46A5DC862C4201B800565D30 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DC852C4201B800565D30 /* Party.swift */; };
+		46C83D482C36006100056BEF /* UK_Election_NightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D472C36006100056BEF /* UK_Election_NightApp.swift */; };
+		46C83D4A2C36006100056BEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D492C36006100056BEF /* ContentView.swift */; };
+		46C83D4E2C36006300056BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C83D4D2C36006300056BEF /* Assets.xcassets */; };
+		46C83D512C36006300056BEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C83D502C36006300056BEF /* Preview Assets.xcassets */; };
+		46C83D5B2C36006300056BEF /* UK_Election_NightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D5A2C36006300056BEF /* UK_Election_NightTests.swift */; };
+		46C83D652C36006300056BEF /* UK_Election_NightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D642C36006300056BEF /* UK_Election_NightUITests.swift */; };
+		46C83D672C36006300056BEF /* UK_Election_NightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D662C36006300056BEF /* UK_Election_NightUITestsLaunchTests.swift */; };
+		46C83D742C36013F00056BEF /* DataImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D732C36013F00056BEF /* DataImport.swift */; };
+		46C83D772C3601ED00056BEF /* dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv in Resources */ = {isa = PBXBuildFile; fileRef = 46C83D762C3601ED00056BEF /* dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv */; };
+		46C83D792C36089200056BEF /* ElectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D782C36089200056BEF /* ElectionData.swift */; };
+		46C83D7B2C36320A00056BEF /* ConstituencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C83D7A2C36320A00056BEF /* ConstituencyList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C83D572C36006300056BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C83D3C2C36006100056BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C83D432C36006100056BEF;
+			remoteInfo = "UK Election Night";
+		};
+		46C83D612C36006300056BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C83D3C2C36006100056BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C83D432C36006100056BEF;
+			remoteInfo = "UK Election Night";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		462CAA772C38AC2B00F91CBC /* ElectionWinners2024.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ElectionWinners2024.csv; sourceTree = "<group>"; };
+		466D52C22C375A5800EAD071 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		467889392C36A52C0069CF94 /* CandidateChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateChooser.swift; sourceTree = "<group>"; };
+		4678893C2C36E8830069CF94 /* WinningCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningCandidate.swift; sourceTree = "<group>"; };
+		468A4D162C4AE04300F38504 /* Seats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seats.swift; sourceTree = "<group>"; };
+		46A5DC852C4201B800565D30 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		46C83D442C36006100056BEF /* UK Election Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UK Election Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C83D472C36006100056BEF /* UK_Election_NightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK_Election_NightApp.swift; sourceTree = "<group>"; };
+		46C83D492C36006100056BEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46C83D4D2C36006300056BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46C83D502C36006300056BEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46C83D562C36006300056BEF /* UK Election NightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UK Election NightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C83D5A2C36006300056BEF /* UK_Election_NightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK_Election_NightTests.swift; sourceTree = "<group>"; };
+		46C83D602C36006300056BEF /* UK Election NightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UK Election NightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C83D642C36006300056BEF /* UK_Election_NightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK_Election_NightUITests.swift; sourceTree = "<group>"; };
+		46C83D662C36006300056BEF /* UK_Election_NightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UK_Election_NightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46C83D732C36013F00056BEF /* DataImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImport.swift; sourceTree = "<group>"; };
+		46C83D762C3601ED00056BEF /* dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv"; sourceTree = "<group>"; };
+		46C83D782C36089200056BEF /* ElectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionData.swift; sourceTree = "<group>"; };
+		46C83D7A2C36320A00056BEF /* ConstituencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstituencyList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C83D412C36006100056BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D532C36006300056BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D5D2C36006300056BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4678893B2C36A5330069CF94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46C83D492C36006100056BEF /* ContentView.swift */,
+				46C83D7A2C36320A00056BEF /* ConstituencyList.swift */,
+				467889392C36A52C0069CF94 /* CandidateChooser.swift */,
+				466D52C22C375A5800EAD071 /* Summary.swift */,
+				468A4D162C4AE04300F38504 /* Seats.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46C83D3B2C36006100056BEF = {
+			isa = PBXGroup;
+			children = (
+				46C83D462C36006100056BEF /* UK Election Night */,
+				46C83D592C36006300056BEF /* UK Election NightTests */,
+				46C83D632C36006300056BEF /* UK Election NightUITests */,
+				46C83D452C36006100056BEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46C83D452C36006100056BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C83D442C36006100056BEF /* UK Election Night.app */,
+				46C83D562C36006300056BEF /* UK Election NightTests.xctest */,
+				46C83D602C36006300056BEF /* UK Election NightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C83D462C36006100056BEF /* UK Election Night */ = {
+			isa = PBXGroup;
+			children = (
+				4678893B2C36A5330069CF94 /* Views */,
+				46C83D472C36006100056BEF /* UK_Election_NightApp.swift */,
+				46C83D4D2C36006300056BEF /* Assets.xcassets */,
+				46C83D752C36018E00056BEF /* Data */,
+				46C83D4F2C36006300056BEF /* Preview Content */,
+				46C83D732C36013F00056BEF /* DataImport.swift */,
+				46C83D782C36089200056BEF /* ElectionData.swift */,
+				4678893C2C36E8830069CF94 /* WinningCandidate.swift */,
+				46A5DC852C4201B800565D30 /* Party.swift */,
+			);
+			path = "UK Election Night";
+			sourceTree = "<group>";
+		};
+		46C83D4F2C36006300056BEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46C83D502C36006300056BEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46C83D592C36006300056BEF /* UK Election NightTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C83D5A2C36006300056BEF /* UK_Election_NightTests.swift */,
+			);
+			path = "UK Election NightTests";
+			sourceTree = "<group>";
+		};
+		46C83D632C36006300056BEF /* UK Election NightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46C83D642C36006300056BEF /* UK_Election_NightUITests.swift */,
+				46C83D662C36006300056BEF /* UK_Election_NightUITestsLaunchTests.swift */,
+			);
+			path = "UK Election NightUITests";
+			sourceTree = "<group>";
+		};
+		46C83D752C36018E00056BEF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				462CAA772C38AC2B00F91CBC /* ElectionWinners2024.csv */,
+				46C83D762C3601ED00056BEF /* dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C83D432C36006100056BEF /* UK Election Night */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C83D6A2C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election Night" */;
+			buildPhases = (
+				46C83D402C36006100056BEF /* Sources */,
+				46C83D412C36006100056BEF /* Frameworks */,
+				46C83D422C36006100056BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UK Election Night";
+			productName = "UK Election Night";
+			productReference = 46C83D442C36006100056BEF /* UK Election Night.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46C83D552C36006300056BEF /* UK Election NightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C83D6D2C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election NightTests" */;
+			buildPhases = (
+				46C83D522C36006300056BEF /* Sources */,
+				46C83D532C36006300056BEF /* Frameworks */,
+				46C83D542C36006300056BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C83D582C36006300056BEF /* PBXTargetDependency */,
+			);
+			name = "UK Election NightTests";
+			productName = "UK Election NightTests";
+			productReference = 46C83D562C36006300056BEF /* UK Election NightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46C83D5F2C36006300056BEF /* UK Election NightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C83D702C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election NightUITests" */;
+			buildPhases = (
+				46C83D5C2C36006300056BEF /* Sources */,
+				46C83D5D2C36006300056BEF /* Frameworks */,
+				46C83D5E2C36006300056BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C83D622C36006300056BEF /* PBXTargetDependency */,
+			);
+			name = "UK Election NightUITests";
+			productName = "UK Election NightUITests";
+			productReference = 46C83D602C36006300056BEF /* UK Election NightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C83D3C2C36006100056BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					46C83D432C36006100056BEF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					46C83D552C36006300056BEF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 46C83D432C36006100056BEF;
+					};
+					46C83D5F2C36006300056BEF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 46C83D432C36006100056BEF;
+					};
+				};
+			};
+			buildConfigurationList = 46C83D3F2C36006100056BEF /* Build configuration list for PBXProject "UK Election Night" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C83D3B2C36006100056BEF;
+			productRefGroup = 46C83D452C36006100056BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C83D432C36006100056BEF /* UK Election Night */,
+				46C83D552C36006300056BEF /* UK Election NightTests */,
+				46C83D5F2C36006300056BEF /* UK Election NightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C83D422C36006100056BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C83D512C36006300056BEF /* Preview Assets.xcassets in Resources */,
+				46C83D4E2C36006300056BEF /* Assets.xcassets in Resources */,
+				462CAA782C38AC2B00F91CBC /* ElectionWinners2024.csv in Resources */,
+				46C83D772C3601ED00056BEF /* dc-candidates-election_id_parl2024-07-04-2024-06-26T01-54-01.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D542C36006300056BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D5E2C36006300056BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C83D402C36006100056BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468A4D172C4AE04300F38504 /* Seats.swift in Sources */,
+				4678893D2C36E8830069CF94 /* WinningCandidate.swift in Sources */,
+				466D52C32C375A5800EAD071 /* Summary.swift in Sources */,
+				46C83D742C36013F00056BEF /* DataImport.swift in Sources */,
+				46C83D7B2C36320A00056BEF /* ConstituencyList.swift in Sources */,
+				46C83D4A2C36006100056BEF /* ContentView.swift in Sources */,
+				4678893A2C36A52C0069CF94 /* CandidateChooser.swift in Sources */,
+				46A5DC862C4201B800565D30 /* Party.swift in Sources */,
+				46C83D792C36089200056BEF /* ElectionData.swift in Sources */,
+				46C83D482C36006100056BEF /* UK_Election_NightApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D522C36006300056BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C83D5B2C36006300056BEF /* UK_Election_NightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C83D5C2C36006300056BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C83D672C36006300056BEF /* UK_Election_NightUITestsLaunchTests.swift in Sources */,
+				46C83D652C36006300056BEF /* UK_Election_NightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C83D582C36006300056BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C83D432C36006100056BEF /* UK Election Night */;
+			targetProxy = 46C83D572C36006300056BEF /* PBXContainerItemProxy */;
+		};
+		46C83D622C36006300056BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C83D432C36006100056BEF /* UK Election Night */;
+			targetProxy = 46C83D612C36006300056BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		46C83D682C36006300056BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C83D692C36006300056BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46C83D6B2C36006300056BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"UK Election Night/Preview Content\"";
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "UK Election";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46C83D6C2C36006300056BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"UK Election Night/Preview Content\"";
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "UK Election";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46C83D6E2C36006300056BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-NightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UK Election Night.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UK Election Night";
+			};
+			name = Debug;
+		};
+		46C83D6F2C36006300056BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-NightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UK Election Night.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UK Election Night";
+			};
+			name = Release;
+		};
+		46C83D712C36006300056BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-NightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UK Election Night";
+			};
+			name = Debug;
+		};
+		46C83D722C36006300056BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6CV68MHPD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andalso.UK-Election-NightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UK Election Night";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C83D3F2C36006100056BEF /* Build configuration list for PBXProject "UK Election Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C83D682C36006300056BEF /* Debug */,
+				46C83D692C36006300056BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C83D6A2C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C83D6B2C36006300056BEF /* Debug */,
+				46C83D6C2C36006300056BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C83D6D2C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election NightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C83D6E2C36006300056BEF /* Debug */,
+				46C83D6F2C36006300056BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C83D702C36006300056BEF /* Build configuration list for PBXNativeTarget "UK Election NightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C83D712C36006300056BEF /* Debug */,
+				46C83D722C36006300056BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46C83D3C2C36006100056BEF /* Project object */;
+}
