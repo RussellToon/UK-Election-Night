@@ -70,6 +70,7 @@ struct ContentView: View {
 
 
     private func addCandidate(candidate: ElectionCandidate) {
+
         let newWinner = WinningCandidate(timestamp: .now, personId: candidate.personId, partyId: candidate.partyId, constituencyId: candidate.constituencyId)
         modelContext.insert(newWinner)
 
@@ -93,7 +94,6 @@ struct ContentView: View {
         catch {
             print("\(error)")
         }
-
     }
 
 }
