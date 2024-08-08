@@ -20,7 +20,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            ConstituencyList(/*electionData: electionData*/
+            ConstituencyList(
                 addCandidate: addCandidate(candidate:),
                 removeCandidate: removeCandidate(candidate:)
             )
@@ -73,7 +73,7 @@ struct ContentView: View {
         let newWinner = WinningCandidate(timestamp: .now, personId: candidate.personId, partyId: candidate.partyId, constituencyId: candidate.constituencyId)
         modelContext.insert(newWinner)
 
-        print("Added \(candidate.personId) \(candidate.personName) \(winners.count)")
+        //print("Added \(candidate.personId) \(candidate.personName) \(winners.count)")
 
         do {
             try modelContext.save()
@@ -85,10 +85,11 @@ struct ContentView: View {
 
     private func removeCandidate(candidate: ElectionCandidate) {
 
-        print("Will delete \(candidate.personId) \(candidate.personName) \(winners.count)")
+        //print("Will delete \(candidate.personId) \(candidate.personName) \(winners.count)")
+
         if let toBeRemoved = winners.filter({ $0.personId == candidate.personId }).first {
             modelContext.delete(toBeRemoved)
-            print("Did delete \(toBeRemoved.personId) \(winners.count)")
+            //print("Did delete \(toBeRemoved.personId) \(winners.count)")
         }
 
         do {
